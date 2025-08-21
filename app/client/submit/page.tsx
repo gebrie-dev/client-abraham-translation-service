@@ -17,7 +17,7 @@ export default function SubmitOrderPage() {
               <span className="text-xl font-bold text-gray-900">Abraham Translation Service</span>
             </div>
             <div className="text-sm text-gray-600">
-              Need help? Call <span className="font-semibold text-blue-600">+1 (555) 123-4567</span>
+              Need help? Call <span className="font-semibold text-blue-600">+251 911141966</span>
             </div>
           </div>
         </div>
@@ -110,35 +110,9 @@ export default function SubmitOrderPage() {
               </CardContent>
             </Card>
 
-            {/* Pricing Info */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="text-lg">Pricing Information</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-3">
-                <div className="text-sm text-gray-600">
-                  <div className="flex justify-between">
-                    <span>Standard (5-7 days):</span>
-                    <span className="font-semibold">$0.12/word</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Urgent (2-3 days):</span>
-                    <span className="font-semibold">$0.18/word</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span>Rush (24 hours):</span>
-                    <span className="font-semibold">$0.24/word</span>
-                  </div>
-                </div>
-                <div className="pt-2 border-t">
-                  <p className="text-xs text-gray-500">
-                    Final pricing may vary based on document complexity and language pair.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+          
 
-            {/* Supported Languages */}
+         
             <Card>
               <CardHeader>
                 <CardTitle className="text-lg">Supported Languages</CardTitle>
@@ -157,6 +131,9 @@ export default function SubmitOrderPage() {
                     "Japanese",
                     "Korean",
                     "Arabic",
+                    "Amharic",
+                    "affan Oromo",
+                    "Tigrinya",
                   ].map((language) => (
                     <Badge key={language} variant="secondary" className="text-xs">
                       {language}
