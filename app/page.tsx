@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+=======
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { Badge } from "@/components/ui/badge"
+>>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
 import {
   Globe,
   FileText,
@@ -14,11 +20,19 @@ import {
   Users,
   Award,
   ArrowRight,
+<<<<<<< HEAD
   Zap,
   Target,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+=======
+
+  Target,
+} from "lucide-react"
+import Link from "next/link"
+import Image from "next/image"
+>>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
 
 export default function HomePage() {
   return (
@@ -31,11 +45,17 @@ export default function HomePage() {
               <div className="bg-blue-600 p-2 rounded-lg">
                 <Globe className="h-6 w-6 text-white" />
               </div>
+<<<<<<< HEAD
               <span className="text-xl font-bold text-gray-900">
                 Abraham Translation Service
               </span>
             </div>
             <nav className="hidden md:flex space-x-8">
+=======
+              <span className="text-xl font-bold text-gray-900">Abraham Translation Service</span>
+            </div>
+            <nav className="hidden md:flex  space-x-10">
+>>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
               <a
                 href="#services"
                 className="text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105"
@@ -58,7 +78,7 @@ export default function HomePage() {
                 href="/client/submit"
                 className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all duration-300 hover:scale-105 hover:shadow-lg"
               >
-                Get Quote
+                send you document
               </Link>
             </nav>
           </div>
@@ -72,7 +92,11 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
+<<<<<<< HEAD
                 <Zap className="h-4 w-4 mr-2" />
+=======
+                
+>>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
                 Professional Translation Services
               </div>
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
@@ -82,9 +106,14 @@ export default function HomePage() {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 max-w-2xl">
+<<<<<<< HEAD
                 Expert translations in over 10 languages with guaranteed
                 accuracy, confidentiality, and lightning-fast delivery.
                 Specializing in legal, medical, and technical documents.
+=======
+                Expert translations in over 13 languages with guaranteed accuracy, confidentiality, and lightning-fast
+                delivery. Specializing in legal, medical, and technical documents.
+>>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link href="/client/submit">
@@ -92,7 +121,11 @@ export default function HomePage() {
                     size="lg"
                     className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg group transition-all duration-300 hover:scale-105 hover:shadow-xl"
                   >
+<<<<<<< HEAD
                     Get Free Quote
+=======
+                    upload you document
+>>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
@@ -109,6 +142,7 @@ export default function HomePage() {
             </div>
 
             <div className="relative">
+<<<<<<< HEAD
               <div className="bg-white rounded-2xl shadow-2xl p-8 transform hover:scale-105 transition-all duration-500">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-qadVvE3N3rZ5IvNcZu8MRuedxiMI2Z.png"
@@ -124,6 +158,50 @@ export default function HomePage() {
               </div>
               <div className="absolute -z-10 top-10 -left-10 w-20 h-20 bg-blue-200 rounded-full opacity-60 animate-pulse"></div>
               <div className="absolute -z-10 bottom-10 -right-10 w-16 h-16 bg-blue-300 rounded-full opacity-40 animate-pulse delay-1000"></div>
+=======
+              <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-500 group">
+                <div className="relative">
+                  <Image
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-qadVvE3N3rZ5IvNcZu8MRuedxiMI2Z.png"
+                    alt="Professional Translation Services - Multi-language keyboard"
+                    width={600}
+                    height={400}
+                    className="w-full h-auto"
+                    priority
+                  />
+                  {/* Gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
+
+                  {/* Floating text overlay */}
+                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
+                    <div className="text-center text-white p-6">
+                      <h3 className="text-2xl font-bold mb-2">WeTranslate</h3>
+                      <p className="text-lg">Breaking Language Barriers</p>
+                      <div className="flex items-center justify-center mt-3">
+                        <div className="flex space-x-1">
+                          <div className="w-2 h-2 bg-white rounded-full animate-pulse"></div>
+                          <div className="w-2 h-2 bg-white rounded-full animate-pulse delay-100"></div>
+                          <div className="w-2 h-2 bg-white rounded-full animate-pulse delay-200"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Floating badges */}
+                <div className="absolute -top-4 -right-4 bg-gradient-to-r from-green-500 to-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg animate-bounce">
+                  ✓ 13+ Languages
+                </div>
+                <div className="absolute -bottom-4 -left-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
+                  🚀 Fast Delivery
+                </div>
+              </div>
+
+              {/* Floating decorative elements */}
+              <div className="absolute -z-10 top-10 -left-10 w-20 h-20 bg-gradient-to-br from-blue-200 to-blue-300 rounded-full opacity-60 animate-pulse"></div>
+              <div className="absolute -z-10 bottom-10 -right-10 w-16 h-16 bg-gradient-to-br from-purple-200 to-purple-300 rounded-full opacity-40 animate-pulse delay-1000"></div>
+              <div className="absolute -z-10 top-1/2 -right-20 w-12 h-12 bg-gradient-to-br from-green-200 to-green-300 rounded-full opacity-50 animate-pulse delay-500"></div>
+>>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
             </div>
           </div>
         </div>
@@ -137,6 +215,7 @@ export default function HomePage() {
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-4 rounded-full mb-4 mx-auto w-fit group-hover:scale-110 transition-all duration-300">
                 <Users className="h-8 w-8 text-blue-600" />
               </div>
+<<<<<<< HEAD
               <div className="text-3xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
                 500+
               </div>
@@ -171,6 +250,32 @@ export default function HomePage() {
               <div className="text-3xl font-bold text-gray-900 group-hover:text-orange-600 transition-colors">
                 15+
               </div>
+=======
+              <div className="text-3xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">500+</div>
+              <div className="text-gray-600 font-medium">Satisfied Clients</div>
+            </div>
+            <div className="group cursor-pointer">
+              <div className="bg-gradient-to-br from-green-50 to-green-100 p-4 rounded-full mb-4 mx-auto w-fit group-hover:scale-110 transition-all duration-300">
+                <FileText className="h-8 w-8 text-green-600" />
+              </div>
+              <div className="text-3xl font-bold text-gray-900 group-hover:text-green-600 transition-colors">
+                2,000+
+              </div>
+              <div className="text-gray-600 font-medium">Documents Translated</div>
+            </div>
+            <div className="group cursor-pointer">
+              <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-4 rounded-full mb-4 mx-auto w-fit group-hover:scale-110 transition-all duration-300">
+                <Globe className="h-8 w-8 text-purple-600" />
+              </div>
+              <div className="text-3xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors">13+</div>
+              <div className="text-gray-600 font-medium">Languages Supported</div>
+            </div>
+            <div className="group cursor-pointer">
+              <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-4 rounded-full mb-4 mx-auto w-fit group-hover:scale-110 transition-all duration-300">
+                <Award className="h-8 w-8 text-orange-600" />
+              </div>
+              <div className="text-3xl font-bold text-gray-900 group-hover:text-orange-600 transition-colors">15+</div>
+>>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
               <div className="text-gray-600 font-medium">Years Experience</div>
             </div>
           </div>
@@ -178,19 +283,27 @@ export default function HomePage() {
       </section>
 
       {/* Services Section */}
+<<<<<<< HEAD
       <section
         id="services"
         className="py-20 bg-gradient-to-br from-gray-50 to-white"
       >
+=======
+      <section id="services" className="py-20 bg-gradient-to-br from-gray-50 to-white">
+>>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
               <Target className="h-4 w-4 mr-2" />
               Our Expertise
             </div>
+<<<<<<< HEAD
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Translation Services
             </h2>
+=======
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Translation Services</h2>
+>>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Specialized translation services across multiple industries with
               guaranteed accuracy and confidentiality.
@@ -207,8 +320,13 @@ export default function HomePage() {
                   Legal Documents
                 </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
+<<<<<<< HEAD
                   Contracts, court documents, patents, and legal correspondence
                   with certified accuracy and legal compliance.
+=======
+                  Contracts, court documents, patents, and legal correspondence with certified accuracy and legal
+                  compliance.
+>>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
                 </p>
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-center group-hover:text-gray-700 transition-colors">
@@ -236,8 +354,12 @@ export default function HomePage() {
                   Medical Documents
                 </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
+<<<<<<< HEAD
                   Medical records, research papers, and pharmaceutical
                   documentation with precision and compliance.
+=======
+                  Medical records, research papers, and pharmaceutical documentation with precision and compliance.
+>>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
                 </p>
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-center group-hover:text-gray-700 transition-colors">
@@ -265,8 +387,12 @@ export default function HomePage() {
                   Technical & Business
                 </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
+<<<<<<< HEAD
                   Manuals, marketing materials, and business documents for
                   global markets and international expansion.
+=======
+                  Manuals, marketing materials, and business documents for global markets and international expansion.
+>>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
                 </p>
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-center group-hover:text-gray-700 transition-colors">
@@ -288,9 +414,13 @@ export default function HomePage() {
 
           {/* Language Grid */}
           <div className="mt-20">
+<<<<<<< HEAD
             <h3 className="text-3xl font-bold text-gray-900 text-center mb-10">
               Languages We Master
             </h3>
+=======
+            <h3 className="text-3xl font-bold text-gray-900 text-center mb-10">Languages We Master</h3>
+>>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
             <div className="flex flex-wrap justify-center gap-4">
               {[
                 "English",
@@ -304,25 +434,54 @@ export default function HomePage() {
                 "Japanese",
                 "Korean",
                 "Arabic",
+<<<<<<< HEAD
               ].map((language) => (
                 <Badge
                   key={language}
                   variant="secondary"
                   className="px-6 py-3 text-base font-medium hover:bg-blue-100 hover:text-blue-700 transition-all duration-300 hover:scale-105 cursor-pointer"
+=======
+                "Amharic",
+                "Oromo",
+                "Tigrinya",
+              ].map((language, index) => (
+                <Badge
+                  key={language}
+                  variant="secondary"
+                  className={`px-6 py-3 text-base font-medium hover:bg-blue-100 hover:text-blue-700 transition-all duration-300 hover:scale-105 cursor-pointer transform hover:rotate-1 ${
+                    ["Amharic", "Oromo", "Tigrinya"].includes(language)
+                      ? "bg-gradient-to-r from-green-100 to-yellow-100 border-2 border-green-200 text-green-800 hover:from-green-200 hover:to-yellow-200"
+                      : ""
+                  }`}
+                  style={{
+                    animationDelay: `${index * 100}ms`,
+                  }}
+>>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
                 >
                   {language}
+                  {["Amharic", "Oromo", "Tigrinya"].includes(language) && <span className="ml-2 text-xs">🇪🇹</span>}
                 </Badge>
               ))}
+            </div>
+            <div className="mt-8 text-center">
+              <p className="text-gray-600 text-lg">
+                <span className="font-semibold text-green-700">New:</span> Now supporting Ethiopian languages including
+                Amharic, Oromo, and Tigrinya
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* About Section */}
+<<<<<<< HEAD
       <section
         id="about"
         className="py-20 bg-gradient-to-br from-blue-50 to-white"
       >
+=======
+      <section id="about" className="py-20 bg-gradient-to-br from-blue-50 to-white">
+>>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -376,7 +535,7 @@ export default function HomePage() {
 
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <Clock className="h-5 w-5 text-blue-600 mr-3 mt-1" />
+                  <Clock className="h-5 w-5 text-blue-600 mr-4 mt-1" />
                   <div>
                     <h4 className="font-semibold text-gray-900">
                       Fast Delivery
@@ -386,8 +545,9 @@ export default function HomePage() {
                     </p>
                   </div>
                 </div>
+
                 <div className="flex items-start">
-                  <Shield className="h-5 w-5 text-blue-600 mr-3 mt-1" />
+                  <Shield className="h-5 w-5 text-blue-600 mr-4 mt-1" />
                   <div>
                     <h4 className="font-semibold text-gray-900">
                       Secure & Confidential
@@ -397,8 +557,9 @@ export default function HomePage() {
                     </p>
                   </div>
                 </div>
+
                 <div className="flex items-start">
-                  <Award className="h-5 w-5 text-blue-600 mr-3 mt-1" />
+                  <Award className="h-5 w-5 text-blue-600 mr-4 mt-1" />
                   <div>
                     <h4 className="font-semibold text-gray-900">
                       Quality Guaranteed
@@ -449,19 +610,44 @@ export default function HomePage() {
                   <Phone className="h-6 w-6 text-blue-600 mr-4 mt-1" />
                   <div>
                     <h4 className="font-semibold text-gray-900">Phone</h4>
+<<<<<<< HEAD
                     <p className="text-gray-600">+1 (555) 123-4567</p>
                     <p className="text-sm text-gray-500">
                       Monday - Friday, 9 AM - 6 PM EST
                     </p>
+=======
+                    <p className="text-gray-600">+25191141966</p>
+                    <p className="text-sm text-gray-500">Monday - Saturday, 9 AM - 6 PM EST</p>
+>>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
                   </div>
                 </div>
 
                 <div className="flex items-start">
                   <MapPin className="h-6 w-6 text-blue-600 mr-4 mt-1" />
                   <div>
-                    <h4 className="font-semibold text-gray-900">Address</h4>
-                    <p className="text-gray-600">123 Translation Street</p>
-                    <p className="text-gray-600">New York, NY 10001</p>
+                    <h4 className="font-semibold text-gray-900">Office Location</h4>
+                    <p className="text-gray-600">Yeha Building</p>
+                    <p className="text-gray-600">Addis Ababa, Ethiopia</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="mt-8">
+                <h4 className="font-semibold text-gray-900 mb-4">Find Our Office</h4>
+                <div className="relative rounded-lg overflow-hidden shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                  <iframe
+                    width="100%"
+                    height="300"
+                    src="https://maps.google.com/maps?q=yeha%20building&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameBorder="0"
+                    scrolling="no"
+                    marginHeight="0"
+                    marginWidth="0"
+                    className="w-full h-[300px] rounded-lg"
+                    title="Abraham Translation Service Office Location"
+                  />
+                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-2 rounded-lg shadow-md">
+                    <p className="text-sm font-medium text-gray-900">📍 Our Office</p>
                   </div>
                 </div>
               </div>
@@ -601,7 +787,7 @@ export default function HomePage() {
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 Abraham Translation Service. All rights reserved.</p>
+            <p>&copy; 2025 Abraham Translation Service. All rights reserved.</p>
           </div>
         </div>
       </footer>
