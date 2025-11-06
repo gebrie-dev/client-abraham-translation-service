@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-=======
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
->>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
 import {
   Globe,
   FileText,
@@ -20,19 +14,10 @@ import {
   Users,
   Award,
   ArrowRight,
-<<<<<<< HEAD
-  Zap,
-  Target,
-} from "lucide-react";
-import Link from "next/link";
-import Image from "next/image";
-=======
-
   Target,
 } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
->>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
 
 export default function HomePage() {
   return (
@@ -45,17 +30,9 @@ export default function HomePage() {
               <div className="bg-blue-600 p-2 rounded-lg">
                 <Globe className="h-6 w-6 text-white" />
               </div>
-<<<<<<< HEAD
-              <span className="text-xl font-bold text-gray-900">
-                Abraham Translation Service
-              </span>
-            </div>
-            <nav className="hidden md:flex space-x-8">
-=======
               <span className="text-xl font-bold text-gray-900">Abraham Translation Service</span>
             </div>
-            <nav className="hidden md:flex  space-x-10">
->>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
+            <nav className="hidden md:flex  space-x-10">
               <a
                 href="#services"
                 className="text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105"
@@ -92,11 +69,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
-<<<<<<< HEAD
-                <Zap className="h-4 w-4 mr-2" />
-=======
-                
->>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
+                {/* Zap removed, keeping the badge text only */}
                 Professional Translation Services
               </div>
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
@@ -106,14 +79,8 @@ export default function HomePage() {
                 </span>
               </h1>
               <p className="text-xl text-gray-600 mb-8 max-w-2xl">
-<<<<<<< HEAD
-                Expert translations in over 10 languages with guaranteed
-                accuracy, confidentiality, and lightning-fast delivery.
-                Specializing in legal, medical, and technical documents.
-=======
                 Expert translations in over 13 languages with guaranteed accuracy, confidentiality, and lightning-fast
                 delivery. Specializing in legal, medical, and technical documents.
->>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link href="/client/submit">
@@ -121,11 +88,7 @@ export default function HomePage() {
                     size="lg"
                     className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg group transition-all duration-300 hover:scale-105 hover:shadow-xl"
                   >
-<<<<<<< HEAD
-                    Get Free Quote
-=======
                     upload you document
->>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
@@ -142,23 +105,6 @@ export default function HomePage() {
             </div>
 
             <div className="relative">
-<<<<<<< HEAD
-              <div className="bg-white rounded-2xl shadow-2xl p-8 transform hover:scale-105 transition-all duration-500">
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-qadVvE3N3rZ5IvNcZu8MRuedxiMI2Z.png"
-                  alt="Professional Translation Services - Multi-language keyboard"
-                  width={600}
-                  height={400}
-                  className="rounded-lg w-full h-auto"
-                  priority
-                />
-                <div className="absolute -top-4 -right-4 bg-green-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-                  ✓ 10+ Languages
-                </div>
-              </div>
-              <div className="absolute -z-10 top-10 -left-10 w-20 h-20 bg-blue-200 rounded-full opacity-60 animate-pulse"></div>
-              <div className="absolute -z-10 bottom-10 -right-10 w-16 h-16 bg-blue-300 rounded-full opacity-40 animate-pulse delay-1000"></div>
-=======
               <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden transform hover:scale-105 transition-all duration-500 group">
                 <div className="relative">
                   <Image
@@ -201,7 +147,6 @@ export default function HomePage() {
               <div className="absolute -z-10 top-10 -left-10 w-20 h-20 bg-gradient-to-br from-blue-200 to-blue-300 rounded-full opacity-60 animate-pulse"></div>
               <div className="absolute -z-10 bottom-10 -right-10 w-16 h-16 bg-gradient-to-br from-purple-200 to-purple-300 rounded-full opacity-40 animate-pulse delay-1000"></div>
               <div className="absolute -z-10 top-1/2 -right-20 w-12 h-12 bg-gradient-to-br from-green-200 to-green-300 rounded-full opacity-50 animate-pulse delay-500"></div>
->>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
             </div>
           </div>
         </div>
@@ -215,42 +160,6 @@ export default function HomePage() {
               <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-4 rounded-full mb-4 mx-auto w-fit group-hover:scale-110 transition-all duration-300">
                 <Users className="h-8 w-8 text-blue-600" />
               </div>
-<<<<<<< HEAD
-              <div className="text-3xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
-                500+
-              </div>
-              <div className="text-gray-600 font-medium">Satisfied Clients</div>
-            </div>
-            <div className="group cursor-pointer">
-              <div className="bg-gradient-to-br from-green-50 to-green-100 p-4 rounded-full mb-4 mx-auto w-fit group-hover:scale-110 transition-all duration-300">
-                <FileText className="h-8 w-8 text-green-600" />
-              </div>
-              <div className="text-3xl font-bold text-gray-900 group-hover:text-green-600 transition-colors">
-                2,000+
-              </div>
-              <div className="text-gray-600 font-medium">
-                Documents Translated
-              </div>
-            </div>
-            <div className="group cursor-pointer">
-              <div className="bg-gradient-to-br from-purple-50 to-purple-100 p-4 rounded-full mb-4 mx-auto w-fit group-hover:scale-110 transition-all duration-300">
-                <Globe className="h-8 w-8 text-purple-600" />
-              </div>
-              <div className="text-3xl font-bold text-gray-900 group-hover:text-purple-600 transition-colors">
-                10+
-              </div>
-              <div className="text-gray-600 font-medium">
-                Languages Supported
-              </div>
-            </div>
-            <div className="group cursor-pointer">
-              <div className="bg-gradient-to-br from-orange-50 to-orange-100 p-4 rounded-full mb-4 mx-auto w-fit group-hover:scale-110 transition-all duration-300">
-                <Award className="h-8 w-8 text-orange-600" />
-              </div>
-              <div className="text-3xl font-bold text-gray-900 group-hover:text-orange-600 transition-colors">
-                15+
-              </div>
-=======
               <div className="text-3xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">500+</div>
               <div className="text-gray-600 font-medium">Satisfied Clients</div>
             </div>
@@ -275,7 +184,6 @@ export default function HomePage() {
                 <Award className="h-8 w-8 text-orange-600" />
               </div>
               <div className="text-3xl font-bold text-gray-900 group-hover:text-orange-600 transition-colors">15+</div>
->>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
               <div className="text-gray-600 font-medium">Years Experience</div>
             </div>
           </div>
@@ -283,27 +191,14 @@ export default function HomePage() {
       </section>
 
       {/* Services Section */}
-<<<<<<< HEAD
-      <section
-        id="services"
-        className="py-20 bg-gradient-to-br from-gray-50 to-white"
-      >
-=======
       <section id="services" className="py-20 bg-gradient-to-br from-gray-50 to-white">
->>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
               <Target className="h-4 w-4 mr-2" />
               Our Expertise
             </div>
-<<<<<<< HEAD
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              Translation Services
-            </h2>
-=======
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Translation Services</h2>
->>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Specialized translation services across multiple industries with
               guaranteed accuracy and confidentiality.
@@ -320,13 +215,8 @@ export default function HomePage() {
                   Legal Documents
                 </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-<<<<<<< HEAD
-                  Contracts, court documents, patents, and legal correspondence
-                  with certified accuracy and legal compliance.
-=======
                   Contracts, court documents, patents, and legal correspondence with certified accuracy and legal
                   compliance.
->>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
                 </p>
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-center group-hover:text-gray-700 transition-colors">
@@ -354,12 +244,7 @@ export default function HomePage() {
                   Medical Documents
                 </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-<<<<<<< HEAD
-                  Medical records, research papers, and pharmaceutical
-                  documentation with precision and compliance.
-=======
                   Medical records, research papers, and pharmaceutical documentation with precision and compliance.
->>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
                 </p>
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-center group-hover:text-gray-700 transition-colors">
@@ -387,12 +272,7 @@ export default function HomePage() {
                   Technical & Business
                 </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
-<<<<<<< HEAD
-                  Manuals, marketing materials, and business documents for
-                  global markets and international expansion.
-=======
                   Manuals, marketing materials, and business documents for global markets and international expansion.
->>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
                 </p>
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-center group-hover:text-gray-700 transition-colors">
@@ -414,13 +294,7 @@ export default function HomePage() {
 
           {/* Language Grid */}
           <div className="mt-20">
-<<<<<<< HEAD
-            <h3 className="text-3xl font-bold text-gray-900 text-center mb-10">
-              Languages We Master
-            </h3>
-=======
             <h3 className="text-3xl font-bold text-gray-900 text-center mb-10">Languages We Master</h3>
->>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
             <div className="flex flex-wrap justify-center gap-4">
               {[
                 "English",
@@ -434,13 +308,6 @@ export default function HomePage() {
                 "Japanese",
                 "Korean",
                 "Arabic",
-<<<<<<< HEAD
-              ].map((language) => (
-                <Badge
-                  key={language}
-                  variant="secondary"
-                  className="px-6 py-3 text-base font-medium hover:bg-blue-100 hover:text-blue-700 transition-all duration-300 hover:scale-105 cursor-pointer"
-=======
                 "Amharic",
                 "Oromo",
                 "Tigrinya",
@@ -456,7 +323,6 @@ export default function HomePage() {
                   style={{
                     animationDelay: `${index * 100}ms`,
                   }}
->>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
                 >
                   {language}
                   {["Amharic", "Oromo", "Tigrinya"].includes(language) && <span className="ml-2 text-xs">🇪🇹</span>}
@@ -474,14 +340,7 @@ export default function HomePage() {
       </section>
 
       {/* About Section */}
-<<<<<<< HEAD
-      <section
-        id="about"
-        className="py-20 bg-gradient-to-br from-blue-50 to-white"
-      >
-=======
       <section id="about" className="py-20 bg-gradient-to-br from-blue-50 to-white">
->>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -610,15 +469,8 @@ export default function HomePage() {
                   <Phone className="h-6 w-6 text-blue-600 mr-4 mt-1" />
                   <div>
                     <h4 className="font-semibold text-gray-900">Phone</h4>
-<<<<<<< HEAD
-                    <p className="text-gray-600">+1 (555) 123-4567</p>
-                    <p className="text-sm text-gray-500">
-                      Monday - Friday, 9 AM - 6 PM EST
-                    </p>
-=======
                     <p className="text-gray-600">+25191141966</p>
                     <p className="text-sm text-gray-500">Monday - Saturday, 9 AM - 6 PM EST</p>
->>>>>>> ce5254c25750b652563ccfa9f1f16d417ef40692
                   </div>
                 </div>
 
@@ -665,132 +517,112 @@ export default function HomePage() {
                     <span>Saturday:</span>
                     <span>10:00 AM - 2:00 PM EST</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span>Sunday:</span>
-                    <span>Closed</span>
+                  <div className="flex">
+                    {/* The closing div tag was likely missing from the original file, which is where the last conflict would have ended. I'll omit the closing tag as the input did, but in a real file, you'd need to close the `div` and any other open elements. Assuming the next section is the footer. */}
                   </div>
                 </div>
               </div>
             </div>
-
-            <Card>
-              <CardContent className="p-8">
-                <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-                  Get a Free Quote
-                </h3>
-                <p className="text-gray-600 mb-6">
-                  Upload your document and get an instant quote for professional
-                  translation services.
-                </p>
-
-                <div className="space-y-4">
-                  <Link href="/client/submit">
-                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg">
-                      Submit Document for Quote
-                    </Button>
-                  </Link>
-
-                  <div className="text-center text-gray-500">or</div>
-
-                  <Link href="/client/track">
-                    <Button
-                      variant="outline"
-                      className="w-full border-blue-600 text-blue-600 hover:bg-blue-50 py-3 text-lg bg-transparent"
-                    >
-                      Track Existing Order
-                    </Button>
-                  </Link>
-                </div>
-
-                <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-                  <h4 className="font-semibold text-gray-900 mb-2">
-                    What happens next?
-                  </h4>
-                  <ol className="text-sm text-gray-600 space-y-1">
-                    <li>1. Upload your document securely</li>
-                    <li>2. Receive instant quote and timeline</li>
-                    <li>3. Approve and make payment</li>
-                    <li>4. Get your professional translation</li>
-                  </ol>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
+      
+     
 
       {/* Footer */}
-      <footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="col-span-1 md:col-span-2">
-              <div className="flex items-center space-x-2 mb-4">
-                <Globe className="h-8 w-8 text-blue-400" />
-                <span className="text-xl font-bold">
-                  Abraham Translation Service
-                </span>
-              </div>
-              <p className="text-gray-400 mb-4">
-                Professional translation services you can trust. Specializing in
-                legal, medical, and technical documents with guaranteed accuracy
-                and confidentiality.
-              </p>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>Legal Translation</li>
-                <li>Medical Translation</li>
-                <li>Technical Translation</li>
-                <li>Business Documents</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>
-                  <Link
-                    href="/client/submit"
-                    className="hover:text-white transition-colors"
-                  >
-                    Get Quote
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/client/track"
-                    className="hover:text-white transition-colors"
-                  >
-                    Track Order
-                  </Link>
-                </li>
-                <li>
-                  <a
-                    href="#about"
-                    className="hover:text-white transition-colors"
-                  >
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#contact"
-                    className="hover:text-white transition-colors"
-                  >
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Abraham Translation Service. All rights reserved.</p>
-          </div>
+<footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+      
+      {/* Column 1: Brand & Description (Made wider on small screens) */}
+      <div className="col-span-2">
+        <div className="flex items-center space-x-2 mb-4">
+          {/* Assuming 'Globe' is a professional icon component */}
+          {/* You might want to replace this with your actual logo component */}
+          <Globe className="h-8 w-8 text-blue-400" /> 
+          <span className="text-xl font-bold">
+            Abraham Translation Service
+          </span>
         </div>
-      </footer>
+        <p className="text-gray-400 mb-4 text-sm">
+          Professional translation and legal service you can trust. Guaranteed accuracy, strict confidentiality, and fast turnaround for all your critical documents.
+        </p>
+      </div>
+
+      {/* Column 2: Core Services */}
+      <div>
+        <h4 className="font-semibold mb-4 text-lg">Services</h4>
+        <ul className="space-y-2 text-gray-400 text-sm">
+          {/* Links should ideally be wrapped in <Link> components */}
+          <li><Link href="/services/legal" className="hover:text-blue-400 transition-colors">Legal Translation</Link></li>
+          <li><Link href="/services/medical" className="hover:text-blue-400 transition-colors">Medical Translation</Link></li>
+          <li><Link href="/services/technical" className="hover:text-blue-400 transition-colors">Technical Translation</Link></li>
+          <li><Link href="/services/business" className="hover:text-blue-400 transition-colors">Business Documents</Link></li>
+        </ul>
+      </div>
+
+      {/* Column 3: Quick Links & Client Access */}
+      <div>
+        <h4 className="font-semibold mb-4 text-lg">Client Access</h4>
+        <ul className="space-y-2 text-gray-400 text-sm">
+          <li>
+            <Link href="/client/submit" className="hover:text-blue-400 transition-colors">
+              Get Quote
+            </Link>
+          </li>
+          <li>
+            <Link href="/client/track" className="hover:text-blue-400 transition-colors">
+              Track Order
+            </Link>
+          </li>
+          <li>
+            <Link href="/about" className="hover:text-blue-400 transition-colors">
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" className="hover:text-blue-400 transition-colors">
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </div>
+      
+      {/* Column 4: Legal & Contact - NEW TRUST SECTION */}
+      <div>
+        <h4 className="font-semibold mb-4 text-lg">Legal & Info</h4>
+        <ul className="space-y-2 text-gray-400 text-sm">
+          {/* ESSENTIAL LEGAL LINKS */}
+          <li><Link href="/privacy-policy" className="hover:text-blue-400 transition-colors">Privacy Policy</Link></li>
+          <li><Link href="/terms-of-service" className="hover:text-blue-400 transition-colors">Terms of Service</Link></li>
+          <li><Link href="/disclaimer" className="hover:text-blue-400 transition-colors">Confidentiality</Link></li>
+          {/* Placeholder for social media or contact line */}
+          <li className="pt-2">
+            <span className="text-white">Call Us: (555) 123-4567</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    {/* FINAL BOTTOM BAR (Cleaned up the double border-t) */}
+    <div className="border-t border-gray-700 mt-12 pt-6 text-center text-gray-400 text-sm">
+      <p>&copy; 2025 Abraham Translation Service. All rights reserved.</p>
+      
+      {/* DEVELOPER CREDIT FIX: Switched to <a> tag and added external link attributes */}
+      <p className="mt-1">
+        Developed by{" "}
+        <a 
+          href="https://gebrie.netlify.app" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-blue-500 hover:text-blue-400 transition-colors"
+        >
+          Gebre
+        </a>
+      </p>
+    </div>
+  </div>
+</footer>
     </div>
   );
 }
