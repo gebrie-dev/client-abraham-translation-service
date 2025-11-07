@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import AdBanner from "@/components/AdBanner"
 import {
   Globe,
   FileText,
@@ -19,48 +20,16 @@ import {
 import Link from "next/link"
 import Image from "next/image"
 
+// Import the new components
+import Header from "@/components/Header"
+import Footer from "@/components/Footer"
+
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
-      {/* Header */}
-      <header className="border-b border-gray-200 sticky top-0 bg-white/95 backdrop-blur-sm z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex items-center space-x-2">
-              <div className="bg-blue-600 p-2 rounded-lg">
-                <Globe className="h-6 w-6 text-white" />
-              </div>
-              <span className="text-xl font-bold text-gray-900">Abraham Translation Service</span>
-            </div>
-            <nav className="hidden md:flex  space-x-10">
-              <a
-                href="#services"
-                className="text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105"
-              >
-                Services
-              </a>
-              <a
-                href="#about"
-                className="text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105"
-              >
-                About
-              </a>
-              <a
-                href="#contact"
-                className="text-gray-700 hover:text-blue-600 transition-all duration-300 hover:scale-105"
-              >
-                Contact
-              </a>
-              <Link
-                href="/client/submit"
-                className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-all duration-300 hover:scale-105 hover:shadow-lg"
-              >
-                send you document
-              </Link>
-            </nav>
-          </div>
-        </div>
-      </header>
+      <AdBanner />
+      {/* 1. Header Component */}
+      <Header />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-blue-50 via-white to-blue-50 py-20 relative overflow-hidden">
@@ -69,7 +38,6 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="text-center lg:text-left">
               <div className="inline-flex items-center bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
-                {/* Zap removed, keeping the badge text only */}
                 Professional Translation Services
               </div>
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
@@ -88,7 +56,7 @@ export default function HomePage() {
                     size="lg"
                     className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg group transition-all duration-300 hover:scale-105 hover:shadow-xl"
                   >
-                    upload you document
+                    Upload Your Document
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </Link>
@@ -115,10 +83,8 @@ export default function HomePage() {
                     className="w-full h-auto"
                     priority
                   />
-                  {/* Gradient overlay */}
+                  {/* Gradient overlay and Floating text overlay - kept for styling */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
-
-                  {/* Floating text overlay */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-4 group-hover:translate-y-0">
                     <div className="text-center text-white p-6">
                       <h3 className="text-2xl font-bold mb-2">WeTranslate</h3>
@@ -297,20 +263,9 @@ export default function HomePage() {
             <h3 className="text-3xl font-bold text-gray-900 text-center mb-10">Languages We Master</h3>
             <div className="flex flex-wrap justify-center gap-4">
               {[
-                "English",
-                "Spanish",
-                "French",
-                "German",
-                "Italian",
-                "Portuguese",
-                "Russian",
-                "Chinese",
-                "Japanese",
-                "Korean",
-                "Arabic",
-                "Amharic",
-                "Oromo",
-                "Tigrinya",
+                "English", "Spanish", "French", "German", "Italian", "Portuguese",
+                "Russian", "Chinese", "Japanese", "Korean", "Arabic",
+                "Amharic", "Oromo", "Tigrinya",
               ].map((language, index) => (
                 <Badge
                   key={language}
@@ -517,9 +472,6 @@ export default function HomePage() {
                     <span>Saturday:</span>
                     <span>10:00 AM - 2:00 PM EST</span>
                   </div>
-                  <div className="flex">
-                    {/* The closing div tag was likely missing from the original file, which is where the last conflict would have ended. I'll omit the closing tag as the input did, but in a real file, you'd need to close the `div` and any other open elements. Assuming the next section is the footer. */}
-                  </div>
                 </div>
               </div>
             </div>
@@ -527,102 +479,8 @@ export default function HomePage() {
         </div>
       </section>
       
-     
-
-      {/* Footer */}
-<footer className="bg-gradient-to-r from-gray-900 to-gray-800 text-white py-16">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
-      
-      {/* Column 1: Brand & Description (Made wider on small screens) */}
-      <div className="col-span-2">
-        <div className="flex items-center space-x-2 mb-4">
-          {/* Assuming 'Globe' is a professional icon component */}
-          {/* You might want to replace this with your actual logo component */}
-          <Globe className="h-8 w-8 text-blue-400" /> 
-          <span className="text-xl font-bold">
-            Abraham Translation Service
-          </span>
-        </div>
-        <p className="text-gray-400 mb-4 text-sm">
-          Professional translation and legal service you can trust. Guaranteed accuracy, strict confidentiality, and fast turnaround for all your critical documents.
-        </p>
-      </div>
-
-      {/* Column 2: Core Services */}
-      <div>
-        <h4 className="font-semibold mb-4 text-lg">Services</h4>
-        <ul className="space-y-2 text-gray-400 text-sm">
-          {/* Links should ideally be wrapped in <Link> components */}
-          <li><Link href="/services/legal" className="hover:text-blue-400 transition-colors">Legal Translation</Link></li>
-          <li><Link href="/services/medical" className="hover:text-blue-400 transition-colors">Medical Translation</Link></li>
-          <li><Link href="/services/technical" className="hover:text-blue-400 transition-colors">Technical Translation</Link></li>
-          <li><Link href="/services/business" className="hover:text-blue-400 transition-colors">Business Documents</Link></li>
-        </ul>
-      </div>
-
-      {/* Column 3: Quick Links & Client Access */}
-      <div>
-        <h4 className="font-semibold mb-4 text-lg">Client Access</h4>
-        <ul className="space-y-2 text-gray-400 text-sm">
-          <li>
-            <Link href="/client/submit" className="hover:text-blue-400 transition-colors">
-              Get Quote
-            </Link>
-          </li>
-          <li>
-            <Link href="/client/track" className="hover:text-blue-400 transition-colors">
-              Track Order
-            </Link>
-          </li>
-          <li>
-            <Link href="/about" className="hover:text-blue-400 transition-colors">
-              About Us
-            </Link>
-          </li>
-          <li>
-            <Link href="/contact" className="hover:text-blue-400 transition-colors">
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </div>
-      
-      {/* Column 4: Legal & Contact - NEW TRUST SECTION */}
-      <div>
-        <h4 className="font-semibold mb-4 text-lg">Legal & Info</h4>
-        <ul className="space-y-2 text-gray-400 text-sm">
-          {/* ESSENTIAL LEGAL LINKS */}
-          <li><Link href="/privacy-policy" className="hover:text-blue-400 transition-colors">Privacy Policy</Link></li>
-          <li><Link href="/terms-of-service" className="hover:text-blue-400 transition-colors">Terms of Service</Link></li>
-          <li><Link href="/disclaimer" className="hover:text-blue-400 transition-colors">Confidentiality</Link></li>
-          {/* Placeholder for social media or contact line */}
-          <li className="pt-2">
-            <span className="text-white">Call Us: (555) 123-4567</span>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    {/* FINAL BOTTOM BAR (Cleaned up the double border-t) */}
-    <div className="border-t border-gray-700 mt-12 pt-6 text-center text-gray-400 text-sm">
-      <p>&copy; 2025 Abraham Translation Service. All rights reserved.</p>
-      
-      {/* DEVELOPER CREDIT FIX: Switched to <a> tag and added external link attributes */}
-      <p className="mt-1">
-        Developed by{" "}
-        <a 
-          href="https://gebrie.netlify.app" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-blue-500 hover:text-blue-400 transition-colors"
-        >
-          Gebre
-        </a>
-      </p>
-    </div>
-  </div>
-</footer>
+      {/* 3. Footer Component */}
+      <Footer />
     </div>
   );
 }
